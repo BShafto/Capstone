@@ -183,3 +183,35 @@ article .content .miniDescriptor h4{
     text-align: left;
     opacity: 0.5;
 }
+/*------------------------------------------------------------*/
+.section4{
+    height: 650px;
+    /*margin: 32px 0px;*/
+    background-color: aqua;
+}
+
+.section4 h2{
+    padding: 0px 0px;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+}
+
+.section4 article{
+    display: inline-flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    border: 1px solid red;
+}
+
+.section4 .section4container{
+    display: inline-flex;
+    margin: 0px 0px;
+}
+
+.section4 .section4container . .leftBanners h4{
+    border: 2px orange solid;
+}
+
