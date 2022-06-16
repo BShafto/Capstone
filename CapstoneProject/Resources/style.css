@@ -121,6 +121,7 @@ article .content .miniDescriptor{
     margin: auto;
     flex-direction: column;
     padding: 32px 0px 0px 16px;
+    opacity: 0.7;
 }
 
 .rm{
@@ -130,11 +131,13 @@ article .content .miniDescriptor{
 
 article .content .miniDescriptor h4{
     display: flex;
-    margin: 0px 0px 8px 0px;
+    margin: 8px 0px;
+    font-size: 25px;
 }
 
 .miniDescriptor p{
     display: flex;
+    margin: 8px 0px;
 }
 
 .section2 .leftBanners p{
@@ -273,7 +276,15 @@ footer p{
 
 @media only screen and (max-width: 480px){
 
-    nav h2, header h1{
+    .section4 article, 
+    .section4container .leftBanners h4, 
+    .section4container .leftBanners p,
+    .imgC, 
+    .learningContainer p,
+    footer .goRight,
+    .section2 .leftBanners,
+    nav h2, 
+    header h1{
         display: none;
     }
 
@@ -281,10 +292,13 @@ footer p{
         display: flex;
         width: 25%;
         height: inherit;
+        justify-content: center;
+        align-items: center;
     }
 
     header{
         height: 64px;
+        display: flex;
     }
 
     .leftBanners{
@@ -302,19 +316,17 @@ footer p{
     }
 
     .section1 .content{
-        margin: 0px 16px 0px 16px;
-        width: 100%;
+        margin: 0% 5% 0% 5%;
+        width: 90%;
         font-size: 100%;
     }
 
     .section2{
         display: block;
         border: unset;
-    }
-
-    .section2 .leftBanners{
-        display: none;
-    }
+        margin: 0% 5% 0% 5%;
+        width: 90;
+    }    
 
     .section2 article{
         width: 100%;
@@ -322,7 +334,7 @@ footer p{
 
     article{
         box-sizing: border-box;
-        margin: 0px 16px;
+        margin: 0px;
         border: unset;
     }
 
@@ -342,8 +354,13 @@ footer p{
     }
 
     .imgL{
-        width: 100%;
-        object-fit: contain;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+        min-width: 100%;
+
+        object-fit: unset;
+        margin-top: 16px;
         /*flex-shrink: 0;
         min-width: 100%;
         min-height: 100%;
@@ -353,11 +370,11 @@ footer p{
 
     .miniBanners{
         width: 100%;
-        box-sizing: border-box;
         margin: 0px;
 
-        overflow: hidden;
-        /*display: flex;
+        /*overflow: hidden;
+        display: flex;
+        box-sizing: border-box;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -366,7 +383,6 @@ footer p{
 
     article .content .miniDescriptor{
         margin: 0px;
-        border: 2px solid blue;
         width: 100%;
         font-size: 100%;
         padding: 0px;
@@ -374,6 +390,7 @@ footer p{
 
     .section3{
         background-color: unset;
+        padding-bottom: 0px;
     }
 
     .section3 .row{
@@ -381,27 +398,35 @@ footer p{
     }
 
     .section3 h2{
-        margin: 0px;
-        padding: 32px 0px 0px 0px;
+        margin: 16px 0px 0px 0px;
+        padding: 0px;
     }
 
-    .imgC, .learningContainer p{
-        display: none;
+    .section3 h4{
+        margin: 0px;
     }
 
     .learningContainer{
         background-color: gainsboro;
         width: 100%;
-        text-align: left;
+        text-align: center;
+        margin: 16px 0px;
     }
 
     .learningContainer h4{
         font-size: 150%;
     }
 
-    .section4 article, 
-    .section4container .leftBanners h4, 
-    .section4container .leftBanners p{
-        display: none;
+    footer p{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        float: unset;
+        margin: 0px;
+        display: block;
+    }
+
+    p{
+        margin: 0px;
     }
   }
